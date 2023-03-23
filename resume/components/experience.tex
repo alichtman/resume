@@ -10,31 +10,31 @@
 
 %---------------------------------------------------------
 \cventry
-{ProdSec Native Assurance — Facebook} % Organization
+{Product Security (Native Assurance) — Facebook / Meta} % Organization
 {Security Engineer} % Job title
 {Seattle, WA} % Location
 {June 2022 - Present} % Date(s)
 {
 	\begin{cvitems} % Description(s) of tasks/responsibilities
-		\item {Built continuous integration testing systems to detect security vulnerabilities and prevent security regressions in PortalOS.}
 		\item {Created threat models and documented attack surfaces in order to effectively prioritize security review efforts.}
-		\item {Conducted security reviews of high-risk surfaces. Created  mitigations that eliminated vuln classes.}
+		\item {Conducted security reviews of high-risk surfaces. Implemented mitigations that eliminated entire classes of vulns.}
 		\item {Triaged whitehat reports,  awarded bug bounty payouts, and created proof of concept exploits.}
+		\item {Architect continuous integration systems to detect and prevent security issues before they get deployed.}
 		%  \item {Worked on a team to create proof of concept Stella exploitation exercise}
 	\end{cvitems}
 }
 %---------------------------------------------------------
 \cventry
-{Red Team X, Incident Detection and Response (IDR), ProdSec — Facebook} % Organization
-{Rotational Security Engineer} % Job title
+{Red Team, Incident Detection \& Response (IDR) — Facebook / Meta} % Organization
+{Security Engineer} % Job title
 {Remote} % Location
 {Dec 2021 - June 2022} % Date(s)
 {
 	\begin{cvitems} % Description(s) of tasks/responsibilities
-		\item {Expanded EDR capabilities, improved case investigation tooling, and triaged the IDR incident queue.}
-		\item {Analyzed Unity engine to create signatures that could be used to hunt for and identify malware in 3P Oculus apps.}
+		\item {Expanded EDR capabilities, improved case investigation tooling, and triaged the incident queue.}
+		\item {Created signatures to identify and block malware.}
 		\item {Expanded coverage of automated vuln detection tools, resulting in vulns being detected and remediated before being deployed.}
-		\item {Coordinated incident response at company-wide scale. Led day 0 log4j response -- patched critical services, including Messenger.}
+		\item {Coordinated incident response at company-wide scale (including \texttt{log4j}).}
 	\end{cvitems}
 }
 %---------------------------------------------------------
@@ -45,8 +45,8 @@
 {Sept 2020 - Dec 2021} % Date(s)
 {
 	\begin{cvitems} % Description(s) of tasks/responsibilities
-		\item {Led hardening efforts for PortalOS by using sanitizers, fuzzers, and modern security mitigations.} 
-		\item {Built the first PoC fuzzing harnesses for Portal using AFL. Used UBSAN / ASAN / MSAN / TSAN to find hundreds of bugs, including a set of memory corruption vulnerabilities in PJSIP: \textit{CVE-2022-39244 (9.8 CVSS)}.}
+		\item {Led hardening efforts for \texttt{PortalOS} by using sanitizers, fuzzers, and modern security mitigations.} 
+		\item {Built fuzzing harnesses using \texttt{AFL}. Used \texttt{UBSAN / ASAN / MSAN / TSAN} to find hundreds of bugs, including a set of memory corruption vulnerabilities in \texttt{PJSIP: CVE-2022-39244 (9.8 CVSS)}.}
 		\item {Added Portal support to manufacturing platform. Built HSM integration, logging for security auditing, auto-escalation policies.}
 		\item {Created factory resource monitoring pipelines to eliminate entire classes of manufacturing issues, saving millions of dollars.}
 		%\item {Implemented factory monitoring and auto-triage systems that eliminated entire classes of manufacturing SEVs.}

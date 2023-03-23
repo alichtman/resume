@@ -492,6 +492,8 @@
 }{%
   \end{center}
 }
+
+% TODO: Remove spacing if args aren't passed in: https://github.com/posquit0/Awesome-CV/issues/249
 % Define an entry of cv information
 % Usage: \cventry{<position>}{<title>}{<location>}{<date>}{<description>}
 \newcommand*{\cventry}[5]{
