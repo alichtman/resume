@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  resume-builder:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/resume
+    working_dir: /resume
+    command: >
+      sh -c "xelatex -interaction=nonstopmode -output-directory=resume resume/resume.tex &&
+             echo 'Resume compiled successfully! Check resume/resume.pdf'"
