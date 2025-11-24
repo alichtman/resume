@@ -1,7 +1,8 @@
 {
   "permissions": {
     "allow": [
-      "Bash(xelatex:*)"
+      "Bash(xelatex:*)",
+      "Bash(docker-compose down:*)"
     ],
     "deny": [],
     "ask": []

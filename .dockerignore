@@ -1,0 +1,16 @@
+.git
+.gitignore
+*.aux
+*.lof
+*.log
+*.lot
+*.fls
+*.out
+*.toc
+*.dvi
+*-converted-to.*
+*.synctex.gz
+.DS_Store
+.*sw[op]
+*~
+.claude

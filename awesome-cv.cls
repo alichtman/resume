@@ -470,7 +470,7 @@
 % Usage: \cvsubsection{<subsection-title>}
 \newcommand{\cvsubsection}[1]{%
   \vspace{\acvSectionContentTopSkip}
-  \vspace{-6mm}
+  % \vspace{-6mm}
   \subsectionstyle{#1}
   \phantomsection
 }
@@ -482,7 +482,7 @@
   \paragraphstyle
 }{%
   \par
-  \vspace{-2mm}
+  % \vspace{-2mm}
 }
 
 % Define an environment for cventry
@@ -506,7 +506,7 @@
       \entrypositionstyle{#1} & \entrydatestyle{#4} \\}
     \multicolumn{2}{L{\textwidth}}{\descriptionstyle{#5}}
   \end{tabular*}%
-	\vspace{-0.5mm}
+	% \vspace{-0.5mm}
 }
 
 % Define an environment for cvsubentry
@@ -579,7 +579,6 @@
 }{%
   \end{itemize}
   \end{justify}
-  \vspace{-4.0mm}
 }
 
 

@@ -1,0 +1,13 @@
+services:
+  resume-builder:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    user: "${UID:-1000}:${GID:-1000}"
+    volumes:
+      - .:/resume:Z
+    working_dir: /resume
+    command: >
+      sh -c "fc-cache -fv fonts/ &&
+             xelatex -interaction=nonstopmode -output-directory=resume resume/resume.tex &&
+             echo 'Resume compiled successfully! Check resume/resume.pdf'"
