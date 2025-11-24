@@ -4,10 +4,8 @@ FROM texlive/texlive:latest
 # Set working directory
 WORKDIR /resume
 
-# Install additional packages if needed
-RUN tlmgr update --self && \
-    tlmgr install fontawesome5 && \
-    tlmgr install roboto
+# Install fontconfig for font cache management
+RUN apt-get update && apt-get install -y fontconfig && rm -rf /var/lib/apt/lists/*
 
 # Default command will be overridden by docker-compose
 CMD ["xelatex", "-interaction=nonstopmode", "resume/resume.tex"]
