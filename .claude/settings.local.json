@@ -2,7 +2,9 @@
   "permissions": {
     "allow": [
       "Bash(xelatex:*)",
-      "Bash(docker-compose down:*)"
+      "Bash(docker-compose down:*)",
+      "WebFetch(domain:github.com)",
+      "Bash(docker-compose up:*)"
     ],
     "deny": [],
     "ask": []

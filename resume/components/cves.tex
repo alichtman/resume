@@ -1,0 +1,33 @@
+%-------------------------------------------------------------------------------
+%	SECTION TITLE
+%-------------------------------------------------------------------------------
+\cvsection{Security Vulnerabilities (CVEs)}
+
+%-------------------------------------------------------------------------------
+%	CONTENT
+%-------------------------------------------------------------------------------
+\begin{cventries}
+%---------------------------------------------------------
+\cventry
+{Critical Severity — 9.8 CVSS} % Organization
+{\texttt{CVE-2022-39244} — PJSIP Memory Corruption Vulnerabilities} % Job title
+{} % Location
+{2022} % Date(s)
+{
+	\begin{cvitems} % Description(s)
+	\item {Discovered and patched memory corruption vulnerabilities in PJSIP (a 0-click RCE attack surface) using AFL and sanitizers (ASAN/UBSAN/MSAN/TSAN).}
+	\end{cvitems}
+}
+%---------------------------------------------------------
+\cventry
+{High Severity — 8.4 CVSS} % Organization
+{CVE-2025-27154 — Spotipy Cache File Permission Vulnerability} % Job title
+{} % Location
+{2025} % Date(s)
+{
+	\begin{cvitems} % Description(s)
+		\item {Discovered and patched a vulnerability in the Spotipy library where authentication tokens were cached with overly permissive file permissions (o644), allowing local attackers to steal Spotify credentials.}
+	\end{cvitems}
+}
+%---------------------------------------------------------
+\end{cventries}
